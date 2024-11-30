@@ -48,12 +48,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 nav ul li {
-    display: block;
-    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 15px;
 }
 
 nav a {
@@ -94,26 +94,24 @@ video {
     height: auto;
 }
 
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
 #menu {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 30px;
     width: 80%;
     margin: 0 auto;
 }
 
-.cake-image {
+#menu .cake-image {
     width: 40%;
     height: auto;
     object-fit: cover;
+}
+
+#menu .menu-items {
+    width: 50%;
+    text-align: left;
 }
 
 table, th, td {
@@ -123,4 +121,15 @@ table, th, td {
 
 table th {
     font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu .cake-image,
+    #menu .menu-items {
+        width: 100%;
+    }
 }
