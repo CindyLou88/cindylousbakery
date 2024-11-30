@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #d6a57a;
     text-align: center;
@@ -103,13 +103,24 @@ video {
 
 #menu {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 20px;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .cake-image {
-    width: 50%;
+    width: 40%;
     height: auto;
     object-fit: cover;
+}
+
+table, th, td {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+table th {
+    font-size: 1.3em;
 }
