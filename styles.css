@@ -40,15 +40,15 @@ h2 {
 
 nav {
     background-color: #b97e57;
-    text-align: center;
     padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    display: inline-block;
 }
 
 nav ul li {
@@ -97,21 +97,20 @@ video {
 #menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 30px;
     width: 80%;
     margin: 0 auto;
 }
 
-#menu .cake-image {
-    width: 40%;
-    height: auto;
-    object-fit: cover;
+#menu .menu-items {
+    width: 45%;
 }
 
-#menu .menu-items {
-    width: 50%;
-    text-align: left;
+.cake-image {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
 }
 
 table, th, td {
@@ -126,10 +125,15 @@ table th {
 @media (max-width: 768px) {
     #menu {
         flex-direction: column;
+        align-items: center;
     }
 
-    #menu .cake-image,
-    #menu .menu-items {
-        width: 100%;
+    #menu .menu-items, .cake-image {
+        width: 80%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 }
