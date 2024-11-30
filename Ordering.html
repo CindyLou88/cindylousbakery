@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Cindy Lou's Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Order Your Favorites Online</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="ordering.html">Order Online</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Place Your Order</h2>
+        <form action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item">
+                <option value="pecan-pie">Pecan Pie</option>
+                <option value="Biscuits">Biscuits</option>
+                <option value="Chocolate-Cake">Chocolate Cake</option>
+		<option value="Seasonal-Special">Seasonal Special</option>
+		<option value="Blueberry-Muffins">Blueberry Muffins</option>
+		<option value="Chocolate-Brownies">Chocolate Brownies</option>
+		<option value="peach-cobbler">Peach Cobbler</option>
+		<option value="Cinnamon-Rolls">Cinnamon Rolls</option>
+		<option value="Fruit-Tarts">Fruit Tarts</option>
+		<option value="Chocolate-Chip-Cookies">Chocolate Chip Cookies</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cindy Lou's Bakery</p>
+    </footer>
+</body>
+</html>
